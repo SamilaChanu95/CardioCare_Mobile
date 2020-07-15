@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/doctor_registration"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:background="#EF9636"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="0dp"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextDNIC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:textAlignment="center"
+                    android:inputType="text"
+                    android:padding="7dp"
+                    android:hint="@string/nic_number"
+                    tools:ignore="Autofill" />
+
+                <requestFocus/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextDFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:inputType="textCapWords"
+                    android:background="#ded6ce"
+                    android:hint="@string/first_name"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill" />
+
+
+                <EditText
+                    android:id="@+id/editTextDLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="#ded6ce"
+                    android:inputType="textCapWords"
+                    android:hint="@string/last_name"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextDAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:hint="@string/address"
+                    android:inputType="textPostalAddress"
+                    android:padding="7dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextDDOB"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:background="#ded6ce"
+                    android:inputType="text"
+                    android:layout_marginEnd="5dp"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:hint="@string/date_of_birth"
+                    tools:ignore="Autofill" />
+
+
+                <EditText
+                    android:id="@+id/editTextDPhoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:background="#ded6ce"
+                    android:hint="@string/phone_number"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:layout_marginEnd="6dp"
+                    android:background="#f0a85b"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:padding="7dp"
+                    android:hint="@string/role" />
+
+                <Spinner
+                    android:id="@+id/spinnerDRole"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:background="#ded6ce"
+                    android:entries="@array/doctor_role"
+                    android:padding="8dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:layout_marginEnd="6dp"
+                    android:background="#f0a85b"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:padding="7dp"
+                    android:hint="@string/gender" />
+
+                <Spinner
+                    android:id="@+id/spinnerDGender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:background="#ded6ce"
+                    android:entries="@array/gender"
+                    android:padding="8dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:layout_marginEnd="6dp"
+                    android:background="#f0a85b"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:padding="7dp"
+                    android:hint="@string/status" />
+
+                <Spinner
+                    android:id="@+id/spinnerDStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="#ded6ce"
+                    android:entries="@array/status"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextHospital"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:background="#ded6ce"
+                    android:hint="@string/hospital"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill" />
+
+
+                <EditText
+                    android:id="@+id/editTextDepartment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:hint="@string/department"
+                    android:textAlignment="center"
+                    android:background="#ded6ce"
+                    android:padding="7dp"
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextUnit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:background="#ded6ce"
+                    android:hint="@string/unit"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill" />
+
+
+                <EditText
+                    android:id="@+id/editTextWard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:background="#ded6ce"
+                    android:hint="@string/ward"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/cancel"
+                    android:onClick="cancelAddDoctor"
+                    android:layout_weight="0.5"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:onClick="addNewDoctor"
+                    android:text="@string/save"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

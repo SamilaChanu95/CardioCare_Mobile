@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/icu_report_registration"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:background="#EF9636"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextAdmitDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:inputType="date"
+                    android:hint="@string/admit_date"
+                    tools:ignore="Autofill" />
+
+                <requestFocus/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextRoom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:background="#ded6ce"
+                    android:inputType="textCapCharacters"
+                    android:hint="Room Number"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+
+                <EditText
+                    android:id="@+id/editTextCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="#ded6ce"
+                    android:inputType="textCapCharacters"
+                    android:hint="Code Number"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextDiagnosis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ded6ce"
+                    android:hint="Diagnosis Details"
+                    android:inputType="textMultiLine"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextNeuro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:textAlignment="center"
+                    android:inputType="textMultiLine"
+                    android:padding="7dp"
+                    android:hint="Neuro Details"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextCardiac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:background="#ded6ce"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:hint="Cardiac Details"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextRespiratory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:background="#ded6ce"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:hint="Respiratory Details"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextVentilator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:hint="Ventilator Details"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextGI"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:background="#ded6ce"
+                    android:inputType="textMultiLine"
+                    android:hint="GI Details"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+
+                <EditText
+                    android:id="@+id/editTextGU"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:inputType="textMultiLine"
+                    android:background="#ded6ce"
+                    android:hint="GU Details"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextSkin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:inputType="textMultiLine"
+                    android:background="#ded6ce"
+                    android:hint="Skin"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+
+                <EditText
+                    android:id="@+id/editTextDrains"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:inputType="textMultiLine"
+                    android:background="#ded6ce"
+                    android:hint="Drains"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextLabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:inputType="textMultiLine"
+                    android:background="#ded6ce"
+                    android:hint="Labs"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+
+                <EditText
+                    android:id="@+id/editTextMeds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:inputType="textMultiLine"
+                    android:background="#ded6ce"
+                    android:hint="Meds"
+                    android:padding="7dp"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextHemodynamics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:hint="Hemodynamics Details"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextToDo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:hint="ToDo"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextCoreMeasures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:hint="CoreMeasure Details"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextPatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ded6ce"
+                    android:textAlignment="center"
+                    android:padding="7dp"
+                    android:inputType="number"
+                    android:hint="Patient Details"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:onClick="cancelAddICU"
+                    android:text="@string/cancel"
+                    android:layout_weight="0.5"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:onClick="addNewICU"
+                    android:text="@string/save"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

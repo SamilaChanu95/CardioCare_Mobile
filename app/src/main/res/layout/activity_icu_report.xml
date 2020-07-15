@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ICUReportActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ICU Report Details"
+                android:textSize="20sp"
+                android:textColor="@color/textColorLight"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:background="#EF9636"
+                android:gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_margin="16dp"
+        android:onClick="addICUReport"
+        app:backgroundTint="#EE983A"
+        app:fabSize="mini"
+        app:rippleColor="#ffffff"
+        app:backgroundTintMode="screen"
+        app:ensureMinTouchTargetSize="false"
+        android:layout_gravity="bottom|right|end"
+        android:src="@drawable/ic_add"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_margin="16dp"
+        android:onClick="backMenu"
+        app:backgroundTint="#EE983A"
+        app:fabSize="mini"
+        app:rippleColor="#ffffff"
+        app:backgroundTintMode="screen"
+        app:ensureMinTouchTargetSize="false"
+        android:layout_gravity="bottom|right|start"
+        android:src="@drawable/ic_back"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/nurseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/secondary_btn"
+                android:textColor="@color/textColorPrimary"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:padding="7dp"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/nurseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="Nurse Name"
+                android:padding="7dp"
+                android:textColor="#f0a85b"
+                android:background="@drawable/primary_btn"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/secondary_btn"
+                android:textColor="#EBE8E5"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:padding="7dp"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/nurseAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:padding="7dp"
+                android:textColor="#f0a85b"
+                android:background="@drawable/primary_btn"
+                android:text="@string/address"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/secondary_btn"
+                android:textColor="#EBE8E5"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:padding="7dp"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/nursePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/phone_number"
+                android:textColor="#f0a85b"
+                android:background="@drawable/primary_btn"
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

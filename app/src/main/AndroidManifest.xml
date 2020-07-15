@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usersync">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ConsultantActivity" />
+        <activity android:name=".ICUReportActivity" />
+        <activity android:name=".PatientActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".TechnicianActivity" />
+        <activity android:name=".NurseActivity" />
+        <activity android:name=".DoctorActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewConsultant"
+            android:label="@string/addconsultantactivitylabel"
+            android:noHistory="true" /> <!-- Register MyService -->
+        <service
+            android:name=".MyServiceConsultant"
+            android:enabled="true" /> <!-- Register BroadCase Receiver -->
+        <receiver
+            android:name=".SampleBCConsultant"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".NewDoctor"
+            android:label="@string/adddoctoractivitylabel"
+            android:noHistory="true" /> <!-- Register MyService -->
+        <service
+            android:name=".MyServiceDoctor"
+            android:enabled="true" /> <!-- Register BroadCase Receiver -->
+        <receiver
+            android:name=".SampleBCDoctor"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".NewNurse"
+            android:label="@string/addnurseactivitylabel"
+            android:noHistory="true" /> <!-- Register MyService -->
+        <service
+            android:name=".MyServiceNurse"
+            android:enabled="true" /> <!-- Register BroadCase Receiver -->
+        <receiver
+            android:name=".SampleBCNurse"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".NewICUReport"
+            android:label="@string/addicureportactivitylabel"
+            android:noHistory="true" /> <!-- Register MyService -->
+        <service
+            android:name=".MyServiceICUReport"
+            android:enabled="true" /> <!-- Register BroadCase Receiver -->
+        <receiver
+            android:name=".SampleBCICUReport"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".NewTechnician"
+            android:label="@string/addtechnicianactivitylabel"
+            android:noHistory="true" /> <!-- Register MyService -->
+        <service
+            android:name=".MyServiceTechnician"
+            android:enabled="true" /> <!-- Register BroadCase Receiver -->
+        <receiver
+            android:name=".SampleBCTechnician"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".NewPatient"
+            android:label="@string/addpatientactivitylabel"
+            android:noHistory="true" /> <!-- Register MyService -->
+        <service
+            android:name=".MyServicePatient"
+            android:enabled="true" /> <!-- Register BroadCase Receiver -->
+        <receiver
+            android:name=".SampleBCPatient"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
